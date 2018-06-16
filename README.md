@@ -14,6 +14,11 @@ of .git or node_modules, which was a behaviour it did not had in 2.7, which
 is consistent with what I have observed of the initial compilation time being
 slower and slower as the dependencies grow.
 
+## Running watch mode example
+
+Just `npm install && docker-compose up`. You can change the command that
+is executed inside docker by modifying `docker-command.sh`
+
 ## TypeScript 2.7
 
 See `typescript-272-prof-process.txt`
