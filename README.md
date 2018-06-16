@@ -21,7 +21,7 @@ is executed inside docker by modifying `docker-command.sh`
 
 ## TypeScript 2.7
 
-See `typescript-272-prof-process.txt`
+_See `typescript-272-prof-process.txt` for profilling details_
 
 ```
 node_modules/.bin/tsc --watch --extendedDiagnostics
@@ -53,7 +53,7 @@ Total time:           4.12s <<<<<<<<< see
 
 ## TypeScript 2.9
 
-See `typescript-292-prof-process.txt`
+_See `typescript-292-prof-process.txt` for profiling details_
 
 ```
 node_modules/.bin/tsc --watch --extendedDiagnostics
