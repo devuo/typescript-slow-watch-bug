@@ -14,6 +14,8 @@ of .git or node_modules, which was a behaviour it did not had in 2.7, which
 is consistent with what I have observed of the initial compilation time being
 slower and slower as the dependencies grow.
 
+TypeScript Issue [#25018](https://github.com/Microsoft/TypeScript/issues/25018)
+
 ## Running watch mode example
 
 Just `npm install && docker-compose up`. You can change the command that
