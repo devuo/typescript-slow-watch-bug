@@ -46,7 +46,7 @@ Emit time:            0.04s
 commentTime time:     0.00s
 Source Map time:      0.00s
 I/O Write time:       0.01s
-Total time:           4.12s
+Total time:           4.12s <<<<<<<<< see
 
 08:31:37 - Compilation complete. Watching for file changes.
 ```
@@ -82,7 +82,7 @@ Source Map time:      0.00s
 I/O Write time:       0.01s
 printTime time:       0.05s
 Emit time:            0.05s
-Total time:          32.47s
+Total time:          32.47s <<<<<<<<< see
 ```
 
 For comparision, non watch builds are still fast under 2.9
