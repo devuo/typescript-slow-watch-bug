@@ -1,0 +1,684 @@
+Testing v8 version different from logging version
+Statistical profiling result from typescript292-isolate-0x559bf4aac1c0-v8.log, (32866 ticks, 181 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  22067   67.1%          /lib/ld-musl-x86_64.so.1
+   8242   25.1%          /usr/local/bin/node
+    262    0.8%          [vdso]
+     10    0.0%          /usr/lib/libstdc++.so.6.0.22
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+    255    0.8%   11.2%  LoadIC: A load IC from the snapshot
+    156    0.5%    6.8%  Builtin: InterpreterEntryTrampoline
+     67    0.2%    2.9%  Builtin: MapLookupHashIndex
+     64    0.2%    2.8%  StoreIC: A store IC from the snapshot
+     49    0.1%    2.1%  Builtin: CallFunction_ReceiverIsAny
+     44    0.1%    1.9%  Builtin: LoadIC_Noninlined
+     34    0.1%    1.5%  LazyCompile: ~resolveNameHelper /app/node_modules/typescript/lib/tsc.js:22320:35
+     33    0.1%    1.4%  LazyCompile: *getAccessibleFileSystemEntries /app/node_modules/typescript/lib/tsc.js:3502:52
+     31    0.1%    1.4%  LazyCompile: ~getEncodedRootLength /app/node_modules/typescript/lib/tsc.js:1790:34
+     31    0.1%    1.4%  LazyCompile: *scan /app/node_modules/typescript/lib/tsc.js:5777:22
+     30    0.1%    1.3%  LazyCompile: ~forEachChild /app/node_modules/typescript/lib/tsc.js:11780:26
+     29    0.1%    1.3%  Builtin: Call_ReceiverIsAny
+     22    0.1%    1.0%  KeyedLoadIC: A keyed load IC from the snapshot
+     22    0.1%    1.0%  Builtin: StringPrototypeCharCodeAt
+     21    0.1%    0.9%  LazyCompile: ~scan /app/node_modules/typescript/lib/tsc.js:5777:22
+     19    0.1%    0.8%  LoadIC: A load IC from the snapshot {1}
+     18    0.1%    0.8%  LazyCompile: *Stats fs.js:174:15
+     18    0.1%    0.8%  Builtin: FastNewClosure
+     16    0.0%    0.7%  Builtin: JSConstructStubGenericUnrestrictedReturn
+     16    0.0%    0.7%  Builtin: ArgumentsAdaptorTrampoline
+     15    0.0%    0.7%  Stub: StringAddStub
+     15    0.0%    0.7%  LazyCompile: *checkSourceElement /app/node_modules/typescript/lib/tsc.js:41079:36
+     14    0.0%    0.6%  LazyCompile: ~checkTypeRelatedTo /app/node_modules/typescript/lib/tsc.js:29700:36
+     14    0.0%    0.6%  Builtin: FastNewObject
+     13    0.0%    0.6%  LazyCompile: *bind /app/node_modules/typescript/lib/tsc.js:18912:22
+     12    0.0%    0.5%  Stub: GetPropertyStub
+     12    0.0%    0.5%  Stub: CallApiCallbackStub
+     12    0.0%    0.5%  Builtin: StringPrototypeReplace
+     12    0.0%    0.5%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+     11    0.0%    0.5%  LazyCompile: *computeLineStarts /app/node_modules/typescript/lib/tsc.js:4925:31
+     11    0.0%    0.5%  Builtin: StringPrototypeSubstring
+     10    0.0%    0.4%  LazyCompile: ~watchChildDirectories /app/node_modules/typescript/lib/tsc.js:3120:39
+     10    0.0%    0.4%  LazyCompile: ~compareSignaturesRelated /app/node_modules/typescript/lib/tsc.js:29443:42
+     10    0.0%    0.4%  Builtin: StringEqual
+     10    0.0%    0.4%  Builtin: LoadICProtoArray
+      9    0.0%    0.4%  LazyCompile: ~fs.statSync fs.js:945:23
+      9    0.0%    0.4%  Builtin: GrowFastSmiOrObjectElements
+      8    0.0%    0.4%  LazyCompile: ~getSignatureFromDeclaration /app/node_modules/typescript/lib/tsc.js:27167:45
+      8    0.0%    0.4%  LazyCompile: ~combinePaths /app/node_modules/typescript/lib/tsc.js:2001:26
+      8    0.0%    0.4%  LazyCompile: *visitNode /app/node_modules/typescript/lib/tsc.js:11757:23
+      8    0.0%    0.4%  LazyCompile: *nextJSDocToken /app/node_modules/typescript/lib/tsc.js:16908:40
+      8    0.0%    0.4%  LazyCompile: *getTypeOfVariableOrParameterOrProperty /app/node_modules/typescript/lib/tsc.js:25276:56
+      8    0.0%    0.4%  Builtin: RegExpReplace
+      8    0.0%    0.4%  Builtin: KeyedLoadIC_Megamorphic
+      8    0.0%    0.4%  Builtin: FastArrayPush
+      7    0.0%    0.3%  LazyCompile: ~realpathSync fs.js:1579:40
+      7    0.0%    0.3%  LazyCompile: ~getTypeOfVariableOrParameterOrProperty /app/node_modules/typescript/lib/tsc.js:25276:56
+      7    0.0%    0.3%  LazyCompile: *isRelatedTo /app/node_modules/typescript/lib/tsc.js:29785:33
+      7    0.0%    0.3%  LazyCompile: *getNodeLinks /app/node_modules/typescript/lib/tsc.js:22201:30
+      7    0.0%    0.3%  KeyedStoreIC: A keyed store IC from the snapshot
+      7    0.0%    0.3%  Builtin: MapSet
+      7    0.0%    0.3%  Builtin: InstanceOf
+      7    0.0%    0.3%  Builtin: Call_ReceiverIsNullOrUndefined
+      6    0.0%    0.3%  LazyCompile: ~structuredTypeRelatedTo /app/node_modules/typescript/lib/tsc.js:30178:45
+      6    0.0%    0.3%  LazyCompile: ~declareSymbol /app/node_modules/typescript/lib/tsc.js:17647:31
+      6    0.0%    0.3%  LazyCompile: ~checkVariableLikeDeclaration /app/node_modules/typescript/lib/tsc.js:39419:46
+      6    0.0%    0.3%  LazyCompile: ~addTypeToUnion /app/node_modules/typescript/lib/tsc.js:28009:32
+      6    0.0%    0.3%  LazyCompile: *realpathSync fs.js:1579:40
+      6    0.0%    0.3%  LazyCompile: *declareSymbol /app/node_modules/typescript/lib/tsc.js:17647:31
+      6    0.0%    0.3%  Builtin: KeyedStoreIC_Megamorphic_Strict
+      5    0.0%    0.2%  LazyCompile: ~watchPresentFileSystemEntry /app/node_modules/typescript/lib/tsc.js:3420:53
+      5    0.0%    0.2%  LazyCompile: ~resolveObjectTypeMembers /app/node_modules/typescript/lib/tsc.js:26208:42
+      5    0.0%    0.2%  LazyCompile: ~parseJSDocCommentWorker /app/node_modules/typescript/lib/tsc.js:16286:45
+      5    0.0%    0.2%  LazyCompile: ~mapDefined /app/node_modules/typescript/lib/tsc.js:664:24
+      5    0.0%    0.2%  LazyCompile: ~getTypeFromTypeReference /app/node_modules/typescript/lib/tsc.js:27793:42
+      5    0.0%    0.2%  LazyCompile: ~getApparentType /app/node_modules/typescript/lib/tsc.js:26897:33
+      5    0.0%    0.2%  LazyCompile: ~bindWorker /app/node_modules/typescript/lib/tsc.js:18971:28
+      5    0.0%    0.2%  LazyCompile: ~bindContainer /app/node_modules/typescript/lib/tsc.js:17738:31
+      5    0.0%    0.2%  LazyCompile: ~bindChildrenWorker /app/node_modules/typescript/lib/tsc.js:17859:36
+      5    0.0%    0.2%  LazyCompile: ~addDeclarationToSymbol /app/node_modules/typescript/lib/tsc.js:17575:40
+      5    0.0%    0.2%  LazyCompile: *getTypeFromTypeNode /app/node_modules/typescript/lib/tsc.js:28944:37
+      5    0.0%    0.2%  LazyCompile: *checkVariableLikeDeclaration /app/node_modules/typescript/lib/tsc.js:39419:46
+      5    0.0%    0.2%  LazyCompile: *addTypeToUnion /app/node_modules/typescript/lib/tsc.js:28009:32
+      5    0.0%    0.2%  Builtin: CompileLazy
+      4    0.0%    0.2%  Stub: StringAddStub {1}
+      4    0.0%    0.2%  LazyCompile: ~sort native array.js:748:46
+      4    0.0%    0.2%  LazyCompile: ~parseTagComments /app/node_modules/typescript/lib/tsc.js:16474:42
+      4    0.0%    0.2%  LazyCompile: ~parsePostfixTypeOrHigher /app/node_modules/typescript/lib/tsc.js:13898:42
+      4    0.0%    0.2%  LazyCompile: ~isRelatedTo /app/node_modules/typescript/lib/tsc.js:29785:33
+      4    0.0%    0.2%  LazyCompile: ~getTypeReferenceTypeWorker /app/node_modules/typescript/lib/tsc.js:27685:44
+      4    0.0%    0.2%  LazyCompile: ~getTypeReferenceType /app/node_modules/typescript/lib/tsc.js:27652:38
+      4    0.0%    0.2%  LazyCompile: ~getTypeFromTypeNode /app/node_modules/typescript/lib/tsc.js:28944:37
+      4    0.0%    0.2%  LazyCompile: ~getSymbol /app/node_modules/typescript/lib/tsc.js:22208:27
+      4    0.0%    0.2%  LazyCompile: ~getSingleCallSignature /app/node_modules/typescript/lib/tsc.js:35441:40
+      4    0.0%    0.2%  LazyCompile: ~getResolvedMembersOrExportsOfSymbol /app/node_modules/typescript/lib/tsc.js:26149:53
+      4    0.0%    0.2%  LazyCompile: ~getPathComponents /app/node_modules/typescript/lib/tsc.js:1894:31
+      4    0.0%    0.2%  LazyCompile: ~getEffectiveTypeParameterDeclarations /app/node_modules/typescript/lib/tsc.js:9052:51
+      4    0.0%    0.2%  LazyCompile: ~getDeclaredTypeOfClassOrInterface /app/node_modules/typescript/lib/tsc.js:25804:51
+      4    0.0%    0.2%  LazyCompile: ~getDeclarationName /app/node_modules/typescript/lib/tsc.js:17593:36
+      4    0.0%    0.2%  LazyCompile: ~fsWatch /app/node_modules/typescript/lib/tsc.js:3402:29
+      4    0.0%    0.2%  LazyCompile: ~fs.watch fs.js:1392:20
+      4    0.0%    0.2%  LazyCompile: ~fileSystemEntryExists /app/node_modules/typescript/lib/tsc.js:3536:43
+      4    0.0%    0.2%  LazyCompile: ~createPrinter /app/node_modules/typescript/lib/tsc.js:59850:27
+      4    0.0%    0.2%  LazyCompile: ~computeLineStarts /app/node_modules/typescript/lib/tsc.js:4925:31
+      4    0.0%    0.2%  LazyCompile: ~bindPropertyOrMethodOrAccessor /app/node_modules/typescript/lib/tsc.js:19484:48
+      4    0.0%    0.2%  LazyCompile: *getMinTypeArgumentCount /app/node_modules/typescript/lib/tsc.js:27132:41
+      4    0.0%    0.2%  LazyCompile: *append /app/node_modules/typescript/lib/tsc.js:950:20
+      4    0.0%    0.2%  LazyCompile: *<anonymous> /app/node_modules/typescript/lib/tsc.js:26895:102
+      4    0.0%    0.2%  LazyCompile: *<anonymous> /app/node_modules/typescript/lib/tsc.js:16302:67
+      3    0.0%    0.1%  LazyCompile: ~resolveEntityName /app/node_modules/typescript/lib/tsc.js:22973:35
+      3    0.0%    0.1%  LazyCompile: ~propertiesRelatedTo /app/node_modules/typescript/lib/tsc.js:30362:41
+      3    0.0%    0.1%  LazyCompile: ~parseObjectTypeMembers /app/node_modules/typescript/lib/tsc.js:13683:40
+      3    0.0%    0.1%  LazyCompile: ~join native array.js:287:46
+      3    0.0%    0.1%  LazyCompile: ~instantiateType /app/node_modules/typescript/lib/tsc.js:29289:33
+      3    0.0%    0.1%  LazyCompile: ~instantiateList /app/node_modules/typescript/lib/tsc.js:29026:33
+      3    0.0%    0.1%  LazyCompile: ~getTypeOfInstantiatedSymbol /app/node_modules/typescript/lib/tsc.js:25463:45
+      3    0.0%    0.1%  LazyCompile: ~getTypeListId /app/node_modules/typescript/lib/tsc.js:27523:31
+      3    0.0%    0.1%  LazyCompile: ~getTypeFromClassOrInterfaceReference /app/node_modules/typescript/lib/tsc.js:27579:54
+      3    0.0%    0.1%  LazyCompile: ~getPathFromURL internal/url.js:1371:24
+      3    0.0%    0.1%  LazyCompile: ~getEffectiveTypeAnnotationNode /app/node_modules/typescript/lib/tsc.js:9037:44
+      3    0.0%    0.1%  LazyCompile: ~getAccessibleFileSystemEntries /app/node_modules/typescript/lib/tsc.js:3502:52
+      3    0.0%    0.1%  LazyCompile: ~fs.readdirSync fs.js:900:26
+      3    0.0%    0.1%  LazyCompile: ~finishNode /app/node_modules/typescript/lib/tsc.js:12706:28
+      3    0.0%    0.1%  LazyCompile: ~fillMissingTypeArguments /app/node_modules/typescript/lib/tsc.js:27143:42
+      3    0.0%    0.1%  LazyCompile: ~createInstantiatedSymbolTable /app/node_modules/typescript/lib/tsc.js:26043:47
+      3    0.0%    0.1%  LazyCompile: ~checkTypeReferenceNode /app/node_modules/typescript/lib/tsc.js:38222:40
+      3    0.0%    0.1%  LazyCompile: ~checkParameter /app/node_modules/typescript/lib/tsc.js:37763:32
+      3    0.0%    0.1%  LazyCompile: ~checkGrammarParameterList /app/node_modules/typescript/lib/tsc.js:42792:43
+      3    0.0%    0.1%  LazyCompile: ~checkFunctionOrConstructorSymbol /app/node_modules/typescript/lib/tsc.js:38343:50
+      3    0.0%    0.1%  LazyCompile: ~checkExpression /app/node_modules/typescript/lib/tsc.js:37623:33
+      3    0.0%    0.1%  LazyCompile: ~assert /app/node_modules/typescript/lib/tsc.js:2558:24
+      3    0.0%    0.1%  LazyCompile: ~_addListener events.js:233:22
+      3    0.0%    0.1%  LazyCompile: ~FSWatcher.start fs.js:1370:37
+      3    0.0%    0.1%  LazyCompile: ~EventEmitter events.js:27:22
+      3    0.0%    0.1%  LazyCompile: *visitNodes /app/node_modules/typescript/lib/tsc.js:11760:24
+      3    0.0%    0.1%  LazyCompile: *resolveNameHelper /app/node_modules/typescript/lib/tsc.js:22320:35
+      3    0.0%    0.1%  LazyCompile: *iterateCommentRanges /app/node_modules/typescript/lib/tsc.js:5172:34
+      3    0.0%    0.1%  LazyCompile: *getMembersOfSymbol /app/node_modules/typescript/lib/tsc.js:26174:36
+      3    0.0%    0.1%  LazyCompile: *forEachChild /app/node_modules/typescript/lib/tsc.js:11780:26
+      3    0.0%    0.1%  LazyCompile: *createNode /app/node_modules/typescript/lib/tsc.js:12685:28
+      3    0.0%    0.1%  LazyCompile: *checkFunctionOrMethodDeclaration /app/node_modules/typescript/lib/tsc.js:38955:50
+      3    0.0%    0.1%  LazyCompile: *bindWorker /app/node_modules/typescript/lib/tsc.js:18971:28
+      3    0.0%    0.1%  KeyedStoreIC: A keyed store IC from the snapshot {1}
+      3    0.0%    0.1%  Builtin: ToString
+      3    0.0%    0.1%  Builtin: StringPrototypeSlice
+      3    0.0%    0.1%  Builtin: StringPrototypeIndexOf
+      3    0.0%    0.1%  Builtin: Add {1}
+      2    0.0%    0.1%  Stub: RecordWriteStub
+      2    0.0%    0.1%  Stub: CEntryStub
+      2    0.0%    0.1%  LazyCompile: ~write /app/node_modules/typescript/lib/tsc.js:3178:33
+      2    0.0%    0.1%  LazyCompile: ~tryGetDeclaredTypeOfSymbol /app/node_modules/typescript/lib/tsc.js:25970:44
+      2    0.0%    0.1%  LazyCompile: ~signaturesRelatedTo /app/node_modules/typescript/lib/tsc.js:30500:41
+      2    0.0%    0.1%  LazyCompile: ~shouldReportBadModifier /app/node_modules/typescript/lib/tsc.js:42726:41
+      2    0.0%    0.1%  LazyCompile: ~resolveTypeReferenceName /app/node_modules/typescript/lib/tsc.js:27646:42
+      2    0.0%    0.1%  LazyCompile: ~resolvePath /app/node_modules/typescript/lib/tsc.js:2023:25
+      2    0.0%    0.1%  LazyCompile: ~resolveDeclaredMembers /app/node_modules/typescript/lib/tsc.js:26059:40
+      2    0.0%    0.1%  LazyCompile: ~reportObviousModifierErrors /app/node_modules/typescript/lib/tsc.js:42719:45
+      2    0.0%    0.1%  LazyCompile: ~registerForUnusedIdentifiersCheck /app/node_modules/typescript/lib/tsc.js:38993:51
+      2    0.0%    0.1%  LazyCompile: ~reducePathComponents /app/node_modules/typescript/lib/tsc.js:1901:34
+      2    0.0%    0.1%  LazyCompile: ~recursiveTypeRelatedTo /app/node_modules/typescript/lib/tsc.js:30117:44
+      2    0.0%    0.1%  LazyCompile: ~processReferencedFiles /app/node_modules/typescript/lib/tsc.js:64381:40
+      2    0.0%    0.1%  LazyCompile: ~parseTypeReference /app/node_modules/typescript/lib/tsc.js:13352:36
+      2    0.0%    0.1%  LazyCompile: ~parseNonArrayType /app/node_modules/typescript/lib/tsc.js:13799:35
+      2    0.0%    0.1%  LazyCompile: ~parseList /app/node_modules/typescript/lib/tsc.js:12994:27
+      2    0.0%    0.1%  LazyCompile: ~parseDelimitedList /app/node_modules/typescript/lib/tsc.js:13216:36
+      2    0.0%    0.1%  LazyCompile: ~parseDecorators /app/node_modules/typescript/lib/tsc.js:15821:33
+      2    0.0%    0.1%  LazyCompile: ~nullCheck fs.js:157:19
+      2    0.0%    0.1%  LazyCompile: ~nextTokenIsOnSameLineAndCanFollowModifier /app/node_modules/typescript/lib/tsc.js:12789:59
+      2    0.0%    0.1%  LazyCompile: ~nextJSDocToken /app/node_modules/typescript/lib/tsc.js:16908:40
+      2    0.0%    0.1%  LazyCompile: ~needCollisionCheckForIdentifier /app/node_modules/typescript/lib/tsc.js:39258:49
+      2    0.0%    0.1%  LazyCompile: ~isVolumeCharacter /app/node_modules/typescript/lib/tsc.js:1775:31
+      2    0.0%    0.1%  LazyCompile: ~isUnambiguouslyStartOfFunctionType /app/node_modules/typescript/lib/tsc.js:14006:52
+      2    0.0%    0.1%  LazyCompile: ~isTypeRelatedTo /app/node_modules/typescript/lib/tsc.js:29674:33
+      2    0.0%    0.1%  LazyCompile: ~isListTerminator /app/node_modules/typescript/lib/tsc.js:12931:34
+      2    0.0%    0.1%  LazyCompile: ~isLineBreak /app/node_modules/typescript/lib/tsc.js:5010:25
+      2    0.0%    0.1%  LazyCompile: ~isFunctionLikeKind /app/node_modules/typescript/lib/tsc.js:11093:32
+      2    0.0%    0.1%  LazyCompile: ~getWidenedTypeWithContext /app/node_modules/typescript/lib/tsc.js:31153:43
+      2    0.0%    0.1%  LazyCompile: ~getTypeParametersForTypeReference /app/node_modules/typescript/lib/tsc.js:38211:51
+      2    0.0%    0.1%  LazyCompile: ~getTypeForVariableLikeDeclaration /app/node_modules/typescript/lib/tsc.js:25004:51
+      2    0.0%    0.1%  LazyCompile: ~getTypeAliasInstantiation /app/node_modules/typescript/lib/tsc.js:27607:43
+      2    0.0%    0.1%  LazyCompile: ~getSignaturesOfSymbol /app/node_modules/typescript/lib/tsc.js:27293:39
+      2    0.0%    0.1%  LazyCompile: ~getSelectedModifierFlags /app/node_modules/typescript/lib/tsc.js:9244:38
+      2    0.0%    0.1%  LazyCompile: ~getPropertyTypeForIndexType /app/node_modules/typescript/lib/tsc.js:28388:45
+      2    0.0%    0.1%  LazyCompile: ~getPropertyOfType /app/node_modules/typescript/lib/tsc.js:26998:35
+      2    0.0%    0.1%  LazyCompile: ~getNamedMembers /app/node_modules/typescript/lib/tsc.js:23409:33
+      2    0.0%    0.1%  LazyCompile: ~getJSDocCommentRanges /app/node_modules/typescript/lib/tsc.js:7074:35
+      2    0.0%    0.1%  LazyCompile: ~getInterfaceBaseTypeNodes /app/node_modules/typescript/lib/tsc.js:8296:39
+      2    0.0%    0.1%  LazyCompile: ~getEffectiveReturnTypeNode /app/node_modules/typescript/lib/tsc.js:9045:40
+      2    0.0%    0.1%  LazyCompile: ~getDeclaredTypeOfTypeAlias /app/node_modules/typescript/lib/tsc.js:25828:44
+      2    0.0%    0.1%  LazyCompile: ~getContainerFlags /app/node_modules/typescript/lib/tsc.js:18529:35
+      2    0.0%    0.1%  LazyCompile: ~getCombinedModifierFlags /app/node_modules/typescript/lib/tsc.js:10004:38
+      2    0.0%    0.1%  LazyCompile: ~findResolutionCycleStartIndex /app/node_modules/typescript/lib/tsc.js:24787:47
+      2    0.0%    0.1%  LazyCompile: ~find /app/node_modules/typescript/lib/tsc.js:402:18
+      2    0.0%    0.1%  LazyCompile: ~createSymbolTable /app/node_modules/typescript/lib/tsc.js:209:31
+      2    0.0%    0.1%  LazyCompile: ~createNodeArray /app/node_modules/typescript/lib/tsc.js:12699:33
+      2    0.0%    0.1%  LazyCompile: ~createJSDocComment /app/node_modules/typescript/lib/tsc.js:16390:44
+      2    0.0%    0.1%  LazyCompile: ~checkVarDeclaredNamesNotShadowed /app/node_modules/typescript/lib/tsc.js:39334:50
+      2    0.0%    0.1%  LazyCompile: ~checkSourceElement /app/node_modules/typescript/lib/tsc.js:41079:36
+      2    0.0%    0.1%  LazyCompile: ~checkSignatureDeclaration /app/node_modules/typescript/lib/tsc.js:37872:43
+      2    0.0%    0.1%  LazyCompile: ~checkGrammarModifiers /app/node_modules/typescript/lib/tsc.js:42522:39
+      2    0.0%    0.1%  LazyCompile: ~checkFunctionOrMethodDeclaration /app/node_modules/typescript/lib/tsc.js:38955:50
+      2    0.0%    0.1%  LazyCompile: ~bindPropertyWorker /app/node_modules/typescript/lib/tsc.js:19146:36
+      2    0.0%    0.1%  LazyCompile: ~bind /app/node_modules/typescript/lib/tsc.js:18912:22
+      2    0.0%    0.1%  LazyCompile: ~addRange /app/node_modules/typescript/lib/tsc.js:962:22
+      2    0.0%    0.1%  LazyCompile: ~addChildDirectoryWatcher /app/node_modules/typescript/lib/tsc.js:3131:46
+      2    0.0%    0.1%  LazyCompile: ~Stats.isDirectory fs.js:215:39
+      2    0.0%    0.1%  LazyCompile: ~Stats fs.js:174:15
+      2    0.0%    0.1%  LazyCompile: ~Join native array.js:119:14
+      2    0.0%    0.1%  LazyCompile: ~InnerArraySort native array.js:529:24
+      2    0.0%    0.1%  LazyCompile: ~DoJoin native array.js:94:16
+      2    0.0%    0.1%  LazyCompile: ~ConvertToString native array.js:132:25
+      2    0.0%    0.1%  LazyCompile: ~<anonymous> /app/node_modules/typescript/lib/tsc.js:3122:153
+      2    0.0%    0.1%  LazyCompile: *propertiesRelatedTo /app/node_modules/typescript/lib/tsc.js:30362:41
+      2    0.0%    0.1%  LazyCompile: *parseTagComments /app/node_modules/typescript/lib/tsc.js:16474:42
+      2    0.0%    0.1%  LazyCompile: *parseDelimitedList /app/node_modules/typescript/lib/tsc.js:13216:36
+      2    0.0%    0.1%  LazyCompile: *isModifierKind /app/node_modules/typescript/lib/tsc.js:11020:28
+      2    0.0%    0.1%  LazyCompile: *hasTypeParameterDefault /app/node_modules/typescript/lib/tsc.js:26894:41
+      2    0.0%    0.1%  LazyCompile: *hasType /app/node_modules/typescript/lib/tsc.js:24798:25
+      2    0.0%    0.1%  LazyCompile: *getTypeFromClassOrInterfaceReference /app/node_modules/typescript/lib/tsc.js:27579:54
+      2    0.0%    0.1%  LazyCompile: *getTypeForVariableLikeDeclaration /app/node_modules/typescript/lib/tsc.js:25004:51
+      2    0.0%    0.1%  LazyCompile: *getSymbolOfNode /app/node_modules/typescript/lib/tsc.js:23322:33
+      2    0.0%    0.1%  LazyCompile: *getSymbolLinks /app/node_modules/typescript/lib/tsc.js:22195:32
+      2    0.0%    0.1%  LazyCompile: *getSignatureFromDeclaration /app/node_modules/typescript/lib/tsc.js:27167:45
+      2    0.0%    0.1%  LazyCompile: *getDeclarationModifierFlagsFromSymbol /app/node_modules/typescript/lib/tsc.js:9662:51
+      2    0.0%    0.1%  LazyCompile: *getApparentType /app/node_modules/typescript/lib/tsc.js:26897:33
+      2    0.0%    0.1%  LazyCompile: *fs.statSync fs.js:945:23
+      2    0.0%    0.1%  LazyCompile: *forEach /app/node_modules/typescript/lib/tsc.js:307:21
+      2    0.0%    0.1%  LazyCompile: *createUnionOrIntersectionProperty /app/node_modules/typescript/lib/tsc.js:26908:51
+      2    0.0%    0.1%  LazyCompile: *createNodeWithJSDoc /app/node_modules/typescript/lib/tsc.js:12692:37
+      2    0.0%    0.1%  LazyCompile: *compareSignaturesIdentical /app/node_modules/typescript/lib/tsc.js:30843:44
+      2    0.0%    0.1%  LazyCompile: *checkSignatureDeclaration /app/node_modules/typescript/lib/tsc.js:37872:43
+      2    0.0%    0.1%  LazyCompile: *checkFunctionOrConstructorSymbol /app/node_modules/typescript/lib/tsc.js:38343:50
+      2    0.0%    0.1%  LazyCompile: *checkCollisionWithRequireExportsInGeneratedCode /app/node_modules/typescript/lib/tsc.js:39307:65
+      2    0.0%    0.1%  LazyCompile: *bindChildrenWorker /app/node_modules/typescript/lib/tsc.js:17859:36
+      2    0.0%    0.1%  LazyCompile: *aB native array.js:531:12
+      2    0.0%    0.1%  LazyCompile: *InsertionSort native array.js:542:23
+      2    0.0%    0.1%  Handler: An IC handler from the snapshot
+      2    0.0%    0.1%  Builtin: StringLessThan
+      2    0.0%    0.1%  Builtin: StringIndexOf
+      2    0.0%    0.1%  Builtin: MapPrototypeForEach
+      2    0.0%    0.1%  Builtin: AdaptorWithBuiltinExitFrame
+      1    0.0%    0.0%  Stub: StringAddStub {2}
+      1    0.0%    0.0%  Stub: RecordWriteStub {9}
+      1    0.0%    0.0%  Stub: RecordWriteStub {8}
+      1    0.0%    0.0%  Stub: RecordWriteStub {7}
+      1    0.0%    0.0%  Stub: RecordWriteStub {6}
+      1    0.0%    0.0%  Stub: RecordWriteStub {5}
+      1    0.0%    0.0%  Stub: RecordWriteStub {4}
+      1    0.0%    0.0%  Stub: RecordWriteStub {3}
+      1    0.0%    0.0%  Stub: RecordWriteStub {2}
+      1    0.0%    0.0%  Stub: RecordWriteStub {1}
+      1    0.0%    0.0%  Stub: RecordWriteStub {11}
+      1    0.0%    0.0%  Stub: RecordWriteStub {10}
+      1    0.0%    0.0%  Stub: InternalArraySingleArgumentConstructorStub
+      1    0.0%    0.0%  Stub: CEntryStub {1}
+      1    0.0%    0.0%  Script: ~ts /app/node_modules/typescript/lib/tsc.js:6427:11
+      1    0.0%    0.0%  Script: ~ts /app/node_modules/typescript/lib/tsc.js:43638:11
+      1    0.0%    0.0%  Script: ~ts /app/node_modules/typescript/lib/tsc.js:189:11
+      1    0.0%    0.0%  LazyCompile: ~withPackageId /app/node_modules/typescript/lib/tsc.js:20445:27
+      1    0.0%    0.0%  LazyCompile: ~updateChildWatches /app/node_modules/typescript/lib/tsc.js:3115:36
+      1    0.0%    0.0%  LazyCompile: ~typeToTypeNodeHelper /app/node_modules/typescript/lib/tsc.js:23802:42
+      1    0.0%    0.0%  LazyCompile: ~typeRelatedToSomeType /app/node_modules/typescript/lib/tsc.js:29993:43
+      1    0.0%    0.0%  LazyCompile: ~typeHasArrowFunctionBlockingParseError /app/node_modules/typescript/lib/tsc.js:13360:56
+      1    0.0%    0.0%  LazyCompile: ~typeArgumentsFromTypeReferenceNode /app/node_modules/typescript/lib/tsc.js:27812:52
+      1    0.0%    0.0%  LazyCompile: ~tryAddingExtensions /app/node_modules/typescript/lib/tsc.js:21055:33
+      1    0.0%    0.0%  LazyCompile: ~toPath /app/node_modules/typescript/lib/tsc.js:296:20
+      1    0.0%    0.0%  LazyCompile: ~symbolToTypeNode /app/node_modules/typescript/lib/tsc.js:24409:38
+      1    0.0%    0.0%  LazyCompile: ~symbolIsValue /app/node_modules/typescript/lib/tsc.js:23365:31
+      1    0.0%    0.0%  LazyCompile: ~statsFromValues fs.js:245:25
+      1    0.0%    0.0%  LazyCompile: ~splitRoot fs.js:1543:33
+      1    0.0%    0.0%  LazyCompile: ~speculationHelper /app/node_modules/typescript/lib/tsc.js:12596:35
+      1    0.0%    0.0%  LazyCompile: ~some /app/node_modules/typescript/lib/tsc.js:753:18
+      1    0.0%    0.0%  LazyCompile: ~skipTrivia /app/node_modules/typescript/lib/tsc.js:5046:24
+      1    0.0%    0.0%  LazyCompile: ~skipParameterStart /app/node_modules/typescript/lib/tsc.js:13991:36
+      1    0.0%    0.0%  LazyCompile: ~scanJSDocToken /app/node_modules/typescript/lib/tsc.js:6296:32
+      1    0.0%    0.0%  LazyCompile: ~resolvedTypeScriptOnly /app/node_modules/typescript/lib/tsc.js:20458:36
+      1    0.0%    0.0%  LazyCompile: ~resolveStructuredTypeMembers /app/node_modules/typescript/lib/tsc.js:26618:46
+      1    0.0%    0.0%  LazyCompile: ~resolveExternalModuleSymbol /app/node_modules/typescript/lib/tsc.js:23151:45
+      1    0.0%    0.0%  LazyCompile: ~resolveBaseTypesOfInterface /app/node_modules/typescript/lib/tsc.js:25751:45
+      1    0.0%    0.0%  LazyCompile: ~resolveAlias /app/node_modules/typescript/lib/tsc.js:22910:30
+      1    0.0%    0.0%  LazyCompile: ~removeTrailingNewlines /app/node_modules/typescript/lib/tsc.js:16385:48
+      1    0.0%    0.0%  LazyCompile: ~removeLeadingNewlines /app/node_modules/typescript/lib/tsc.js:16380:47
+      1    0.0%    0.0%  LazyCompile: ~pushTypeResolution /app/node_modules/typescript/lib/tsc.js:24773:36
+      1    0.0%    0.0%  LazyCompile: ~pushAsyncIds internal/async_hooks.js:351:22
+      1    0.0%    0.0%  LazyCompile: ~pathComponents /app/node_modules/typescript/lib/tsc.js:1887:28
+      1    0.0%    0.0%  LazyCompile: ~parseVariableDeclaration /app/node_modules/typescript/lib/tsc.js:15678:42
+      1    0.0%    0.0%  LazyCompile: ~parseTypePredicatePrefix /app/node_modules/typescript/lib/tsc.js:14038:42
+      1    0.0%    0.0%  LazyCompile: ~parseTypeParameter /app/node_modules/typescript/lib/tsc.js:13460:36
+      1    0.0%    0.0%  LazyCompile: ~parseTypeOperatorOrHigher /app/node_modules/typescript/lib/tsc.js:13954:43
+      1    0.0%    0.0%  LazyCompile: ~parseTypeMember /app/node_modules/typescript/lib/tsc.js:13648:33
+      1    0.0%    0.0%  LazyCompile: ~parseType /app/node_modules/typescript/lib/tsc.js:14045:27
+      1    0.0%    0.0%  LazyCompile: ~parseTag /app/node_modules/typescript/lib/tsc.js:16417:34
+      1    0.0%    0.0%  LazyCompile: ~parseParameterOrPropertyTag /app/node_modules/typescript/lib/tsc.js:16576:53
+      1    0.0%    0.0%  LazyCompile: ~parseParameterList /app/node_modules/typescript/lib/tsc.js:13540:36
+      1    0.0%    0.0%  LazyCompile: ~parseJsonText /app/node_modules/typescript/lib/tsc.js:12307:31
+      1    0.0%    0.0%  LazyCompile: ~parseJSDocTypeExpression /app/node_modules/typescript/lib/tsc.js:16245:46
+      1    0.0%    0.0%  LazyCompile: ~parseJSDocIdentifierName /app/node_modules/typescript/lib/tsc.js:16925:50
+      1    0.0%    0.0%  LazyCompile: ~parseJSDocComment /app/node_modules/typescript/lib/tsc.js:16265:39
+      1    0.0%    0.0%  LazyCompile: ~parseFunctionDeclaration /app/node_modules/typescript/lib/tsc.js:15726:42
+      1    0.0%    0.0%  LazyCompile: ~parseFunctionBlockOrSemicolon /app/node_modules/typescript/lib/tsc.js:15616:47
+      1    0.0%    0.0%  LazyCompile: ~parseExpected /app/node_modules/typescript/lib/tsc.js:12630:31
+      1    0.0%    0.0%  LazyCompile: ~parseContextualModifier /app/node_modules/typescript/lib/tsc.js:12786:41
+      1    0.0%    0.0%  LazyCompile: ~nodeIsPresent /app/node_modules/typescript/lib/tsc.js:6624:27
+      1    0.0%    0.0%  LazyCompile: ~nodeIsMissing /app/node_modules/typescript/lib/tsc.js:6617:27
+      1    0.0%    0.0%  LazyCompile: ~nextTokenIsIdentifierOrStringLiteralOnSameLine /app/node_modules/typescript/lib/tsc.js:15612:64
+      1    0.0%    0.0%  LazyCompile: ~maybeTypeParameterReference /app/node_modules/typescript/lib/tsc.js:29207:45
+      1    0.0%    0.0%  LazyCompile: ~map /app/node_modules/typescript/lib/tsc.js:527:17
+      1    0.0%    0.0%  LazyCompile: ~lookAhead /app/node_modules/typescript/lib/tsc.js:12612:27
+      1    0.0%    0.0%  LazyCompile: ~length /app/node_modules/typescript/lib/tsc.js:303:20
+      1    0.0%    0.0%  LazyCompile: ~lastOrUndefined /app/node_modules/typescript/lib/tsc.js:1069:29
+      1    0.0%    0.0%  LazyCompile: ~isWhiteSpaceSingleLine /app/node_modules/typescript/lib/tsc.js:4995:36
+      1    0.0%    0.0%  LazyCompile: ~isTypeReferenceIdentifier /app/node_modules/typescript/lib/tsc.js:41486:43
+      1    0.0%    0.0%  LazyCompile: ~isTypeParameterSymbolDeclaredInContainer /app/node_modules/typescript/lib/tsc.js:22579:58
+      1    0.0%    0.0%  LazyCompile: ~isThislessVariableLikeDeclaration /app/node_modules/typescript/lib/tsc.js:26015:51
+      1    0.0%    0.0%  LazyCompile: ~isThislessInterface /app/node_modules/typescript/lib/tsc.js:25781:37
+      1    0.0%    0.0%  LazyCompile: ~isThisless /app/node_modules/typescript/lib/tsc.js:26026:28
+      1    0.0%    0.0%  LazyCompile: ~isStringLiteral /app/node_modules/typescript/lib/tsc.js:10321:29
+      1    0.0%    0.0%  LazyCompile: ~isStartOfType /app/node_modules/typescript/lib/tsc.js:13854:31
+      1    0.0%    0.0%  LazyCompile: ~isStartOfStatement /app/node_modules/typescript/lib/tsc.js:15427:36
+      1    0.0%    0.0%  LazyCompile: ~isStartOfParameter /app/node_modules/typescript/lib/tsc.js:13487:36
+      1    0.0%    0.0%  LazyCompile: ~isSimpleTypeRelatedTo /app/node_modules/typescript/lib/tsc.js:29625:39
+      1    0.0%    0.0%  LazyCompile: ~isRootedDiskPath /app/node_modules/typescript/lib/tsc.js:1872:30
+      1    0.0%    0.0%  LazyCompile: ~isPrototypeProperty /app/node_modules/typescript/lib/tsc.js:34835:37
+      1    0.0%    0.0%  LazyCompile: ~isParenthesizedArrowFunctionExpression /app/node_modules/typescript/lib/tsc.js:14225:56
+      1    0.0%    0.0%  LazyCompile: ~isNumericLiteralName /app/node_modules/typescript/lib/tsc.js:34057:38
+      1    0.0%    0.0%  LazyCompile: ~isListElement /app/node_modules/typescript/lib/tsc.js:12834:31
+      1    0.0%    0.0%  LazyCompile: ~isJSDocOptionalParameter /app/node_modules/typescript/lib/tsc.js:27077:42
+      1    0.0%    0.0%  LazyCompile: ~isJSDocConstructSignature /app/node_modules/typescript/lib/tsc.js:7954:39
+      1    0.0%    0.0%  LazyCompile: ~isImplementsClause /app/node_modules/typescript/lib/tsc.js:15928:36
+      1    0.0%    0.0%  LazyCompile: ~isIdentifierPart /app/node_modules/typescript/lib/tsc.js:5304:30
+      1    0.0%    0.0%  LazyCompile: ~isGenericMappedType /app/node_modules/typescript/lib/tsc.js:26615:37
+      1    0.0%    0.0%  LazyCompile: ~isFunctionLikeDeclarationKind /app/node_modules/typescript/lib/tsc.js:11079:43
+      1    0.0%    0.0%  LazyCompile: ~isExternalModuleNameRelative /app/node_modules/typescript/lib/tsc.js:180:42
+      1    0.0%    0.0%  LazyCompile: ~isExpressionNode /app/node_modules/typescript/lib/tsc.js:7574:30
+      1    0.0%    0.0%  LazyCompile: ~isDeclarationStatementKind /app/node_modules/typescript/lib/tsc.js:11495:40
+      1    0.0%    0.0%  LazyCompile: ~isDeclaration /app/node_modules/typescript/lib/tsc.js:15373:31
+      1    0.0%    0.0%  LazyCompile: ~isConflictMarkerTrivia /app/node_modules/typescript/lib/tsc.js:5123:36
+      1    0.0%    0.0%  LazyCompile: ~isClassMemberStart /app/node_modules/typescript/lib/tsc.js:15781:36
+      1    0.0%    0.0%  LazyCompile: ~isBinaryExpression /app/node_modules/typescript/lib/tsc.js:10580:32
+      1    0.0%    0.0%  LazyCompile: ~instantiateSymbol /app/node_modules/typescript/lib/tsc.js:29135:35
+      1    0.0%    0.0%  LazyCompile: ~instantiateSignatures /app/node_modules/typescript/lib/tsc.js:29046:39
+      1    0.0%    0.0%  LazyCompile: ~instantiateMappedType /app/node_modules/typescript/lib/tsc.js:29232:39
+      1    0.0%    0.0%  LazyCompile: ~instantiateConditionalType /app/node_modules/typescript/lib/tsc.js:29279:44
+      1    0.0%    0.0%  LazyCompile: ~hasTrailingDirectorySeparator /app/node_modules/typescript/lib/tsc.js:2033:43
+      1    0.0%    0.0%  LazyCompile: ~hasModifier /app/node_modules/typescript/lib/tsc.js:9232:25
+      1    0.0%    0.0%  LazyCompile: ~hasLateBindableName /app/node_modules/typescript/lib/tsc.js:26081:37
+      1    0.0%    0.0%  LazyCompile: ~hasExportDeclarations /app/node_modules/typescript/lib/tsc.js:18637:39
+      1    0.0%    0.0%  LazyCompile: ~handleError fs.js:262:21
+      1    0.0%    0.0%  LazyCompile: ~getTypeWithThisArgument /app/node_modules/typescript/lib/tsc.js:26194:41
+      1    0.0%    0.0%  LazyCompile: ~getTypeReferenceName /app/node_modules/typescript/lib/tsc.js:27634:38
+      1    0.0%    0.0%  LazyCompile: ~getTypeOfSymbol /app/node_modules/typescript/lib/tsc.js:25495:33
+      1    0.0%    0.0%  LazyCompile: ~getTypeOfParameter /app/node_modules/typescript/lib/tsc.js:36461:36
+      1    0.0%    0.0%  LazyCompile: ~getTypeOfFuncClassEnumModule /app/node_modules/typescript/lib/tsc.js:25423:46
+      1    0.0%    0.0%  LazyCompile: ~getTypeFromUnionTypeNode /app/node_modules/typescript/lib/tsc.js:28185:42
+      1    0.0%    0.0%  LazyCompile: ~getTypeFromTypeLiteralOrFunctionOrConstructorTypeNode /app/node_modules/typescript/lib/tsc.js:28755:71
+      1    0.0%    0.0%  LazyCompile: ~getTypeFromThisTypeNode /app/node_modules/typescript/lib/tsc.js:28937:41
+      1    0.0%    0.0%  LazyCompile: ~getTypeFromIntersectionTypeNode /app/node_modules/typescript/lib/tsc.js:28301:49
+      1    0.0%    0.0%  LazyCompile: ~getTypeFromIndexedAccessTypeNode /app/node_modules/typescript/lib/tsc.js:28552:50
+      1    0.0%    0.0%  LazyCompile: ~getTypeAtFlowNode /app/node_modules/typescript/lib/tsc.js:32376:39
+      1    0.0%    0.0%  LazyCompile: ~getTypeArgumentsForAliasSymbol /app/node_modules/typescript/lib/tsc.js:28777:48
+      1    0.0%    0.0%  LazyCompile: ~getThisType /app/node_modules/typescript/lib/tsc.js:28925:29
+      1    0.0%    0.0%  LazyCompile: ~getSymbolOfEntityNameOrPropertyAccessExpression /app/node_modules/typescript/lib/tsc.js:41563:65
+      1    0.0%    0.0%  LazyCompile: ~getSymbolLinks /app/node_modules/typescript/lib/tsc.js:22195:32
+      1    0.0%    0.0%  LazyCompile: ~getSymbolAtLocation /app/node_modules/typescript/lib/tsc.js:41659:37
+      1    0.0%    0.0%  LazyCompile: ~getResolvedTypeParameterDefault /app/node_modules/typescript/lib/tsc.js:26867:49
+      1    0.0%    0.0%  LazyCompile: ~getResolvedBaseConstraint /app/node_modules/typescript/lib/tsc.js:26802:43
+      1    0.0%    0.0%  LazyCompile: ~getPropertiesOfUnionOrIntersectionType /app/node_modules/typescript/lib/tsc.js:26661:56
+      1    0.0%    0.0%  LazyCompile: ~getPropertiesOfType /app/node_modules/typescript/lib/tsc.js:26683:37
+      1    0.0%    0.0%  LazyCompile: ~getPathFromPathComponents /app/node_modules/typescript/lib/tsc.js:1934:39
+      1    0.0%    0.0%  LazyCompile: ~getPackageName /app/node_modules/typescript/lib/tsc.js:21226:28
+      1    0.0%    0.0%  LazyCompile: ~getPackageJsonInfo /app/node_modules/typescript/lib/tsc.js:21109:32
+      1    0.0%    0.0%  LazyCompile: ~getOptionalType /app/node_modules/typescript/lib/tsc.js:31019:33
+      1    0.0%    0.0%  LazyCompile: ~getNumNonRestParameters /app/node_modules/typescript/lib/tsc.js:29560:41
+      1    0.0%    0.0%  LazyCompile: ~getNormalizedPathComponents /app/node_modules/typescript/lib/tsc.js:1926:41
+      1    0.0%    0.0%  LazyCompile: ~getModifierFlagsNoCache /app/node_modules/typescript/lib/tsc.js:9257:37
+      1    0.0%    0.0%  LazyCompile: ~getLocalTypeParametersOfClassOrInterfaceOrTypeAlias /app/node_modules/typescript/lib/tsc.js:25592:69
+      1    0.0%    0.0%  LazyCompile: ~getLiteralTypeFromPropertyName /app/node_modules/typescript/lib/tsc.js:28320:48
+      1    0.0%    0.0%  LazyCompile: ~getLateBoundSymbol /app/node_modules/typescript/lib/tsc.js:26179:36
+      1    0.0%    0.0%  LazyCompile: ~getInferenceInfoForType /app/node_modules/typescript/lib/tsc.js:31595:45
+      1    0.0%    0.0%  LazyCompile: ~getIndexedAccessType /app/node_modules/typescript/lib/tsc.js:28522:38
+      1    0.0%    0.0%  LazyCompile: ~getIndexInfoOfSymbol /app/node_modules/typescript/lib/tsc.js:27469:38
+      1    0.0%    0.0%  LazyCompile: ~getIndexDeclarationOfSymbol /app/node_modules/typescript/lib/tsc.js:27449:45
+      1    0.0%    0.0%  LazyCompile: ~getImmediatelyInvokedFunctionExpression /app/node_modules/typescript/lib/tsc.js:7471:53
+      1    0.0%    0.0%  LazyCompile: ~getIdentifierToken /app/node_modules/typescript/lib/tsc.js:5722:36
+      1    0.0%    0.0%  LazyCompile: ~getGlobalNonNullableTypeInstantiation /app/node_modules/typescript/lib/tsc.js:31023:55
+      1    0.0%    0.0%  LazyCompile: ~getFunctionFlags /app/node_modules/typescript/lib/tsc.js:8351:30
+      1    0.0%    0.0%  LazyCompile: ~getDirectoryToWatchFailedLookupLocation /app/node_modules/typescript/lib/tsc.js:65708:57
+      1    0.0%    0.0%  LazyCompile: ~getDeclarationOfKind /app/node_modules/typescript/lib/tsc.js:6432:34
+      1    0.0%    0.0%  LazyCompile: ~getConstrainedTypeVariable /app/node_modules/typescript/lib/tsc.js:27718:44
+      1    0.0%    0.0%  LazyCompile: ~getConditionalTypeInstantiation /app/node_modules/typescript/lib/tsc.js:29264:49
+      1    0.0%    0.0%  LazyCompile: ~getConditionalType /app/node_modules/typescript/lib/tsc.js:28580:36
+      1    0.0%    0.0%  LazyCompile: ~getCombinedNodeFlags /app/node_modules/typescript/lib/tsc.js:10020:34
+      1    0.0%    0.0%  LazyCompile: ~getClassOrInterfaceDeclarationsOfSymbol /app/node_modules/typescript/lib/tsc.js:40313:57
+      1    0.0%    0.0%  LazyCompile: ~getBaseTypes /app/node_modules/typescript/lib/tsc.js:25678:30
+      1    0.0%    0.0%  LazyCompile: ~getBaseConstraintOfType /app/node_modules/typescript/lib/tsc.js:26789:41
+      1    0.0%    0.0%  LazyCompile: ~getBaseConstraint /app/node_modules/typescript/lib/tsc.js:26809:39
+      1    0.0%    0.0%  LazyCompile: ~getAccessibleSortedChildDirectories /app/node_modules/typescript/lib/tsc.js:3303:67
+      1    0.0%    0.0%  LazyCompile: ~fsWatchDirectory /app/node_modules/typescript/lib/tsc.js:3455:38
+      1    0.0%    0.0%  LazyCompile: ~fs.readFileSync fs.js:548:27
+      1    0.0%    0.0%  LazyCompile: ~fs.openSync fs.js:642:23
+      1    0.0%    0.0%  LazyCompile: ~forEach /app/node_modules/typescript/lib/tsc.js:307:21
+      1    0.0%    0.0%  LazyCompile: ~findSourceFile /app/node_modules/typescript/lib/tsc.js:64279:32
+      1    0.0%    0.0%  LazyCompile: ~filter /app/node_modules/typescript/lib/tsc.js:490:20
+      1    0.0%    0.0%  LazyCompile: ~enumerateInsertsAndDeletes /app/node_modules/typescript/lib/tsc.js:2824:40
+      1    0.0%    0.0%  LazyCompile: ~ensureTrailingDirectorySeparator /app/node_modules/typescript/lib/tsc.js:2047:46
+      1    0.0%    0.0%  LazyCompile: ~encodeRealpathResult fs.js:1552:30
+      1    0.0%    0.0%  LazyCompile: ~emitParameter /app/node_modules/typescript/lib/tsc.js:60508:31
+      1    0.0%    0.0%  LazyCompile: ~emitNodeWithSourceMap /app/node_modules/typescript/lib/tsc.js:59171:39
+      1    0.0%    0.0%  LazyCompile: ~declareSymbolAndAddToSymbolTable /app/node_modules/typescript/lib/tsc.js:18588:50
+      1    0.0%    0.0%  LazyCompile: ~declareModuleMember /app/node_modules/typescript/lib/tsc.js:17710:37
+      1    0.0%    0.0%  LazyCompile: ~createUnionOrIntersectionProperty /app/node_modules/typescript/lib/tsc.js:26908:51
+      1    0.0%    0.0%  LazyCompile: ~createTypeReference /app/node_modules/typescript/lib/tsc.js:27556:37
+      1    0.0%    0.0%  LazyCompile: ~createTypeMapper /app/node_modules/typescript/lib/tsc.js:29065:34
+      1    0.0%    0.0%  LazyCompile: ~createSynthesizedNode /app/node_modules/typescript/lib/tsc.js:43639:35
+      1    0.0%    0.0%  LazyCompile: ~createScanner /app/node_modules/typescript/lib/tsc.js:5322:27
+      1    0.0%    0.0%  LazyCompile: ~createIdentifier /app/node_modules/typescript/lib/tsc.js:12740:34
+      1    0.0%    0.0%  LazyCompile: ~createDirectoryWatcher /app/node_modules/typescript/lib/tsc.js:3098:40
+      1    0.0%    0.0%  LazyCompile: ~copyObject fs.js:84:20
+      1    0.0%    0.0%  LazyCompile: ~convertPropertyValueToJson /app/node_modules/typescript/lib/tsc.js:67988:44
+      1    0.0%    0.0%  LazyCompile: ~containsReference /app/node_modules/typescript/lib/tsc.js:29219:39
+      1    0.0%    0.0%  LazyCompile: ~computeBaseConstraint /app/node_modules/typescript/lib/tsc.js:26821:43
+      1    0.0%    0.0%  LazyCompile: ~compilerHost.resolveTypeReferenceDirectives /app/node_modules/typescript/lib/tsc.js:66605:23
+      1    0.0%    0.0%  LazyCompile: ~compareSignaturesIdentical /app/node_modules/typescript/lib/tsc.js:30843:44
+      1    0.0%    0.0%  LazyCompile: ~compareComparableValues /app/node_modules/typescript/lib/tsc.js:1554:37
+      1    0.0%    0.0%  LazyCompile: ~checkUnionOrIntersectionType /app/node_modules/typescript/lib/tsc.js:38273:46
+      1    0.0%    0.0%  LazyCompile: ~checkTypeParameters /app/node_modules/typescript/lib/tsc.js:40090:37
+      1    0.0%    0.0%  LazyCompile: ~checkTypeParameterListsIdentical /app/node_modules/typescript/lib/tsc.js:40112:50
+      1    0.0%    0.0%  LazyCompile: ~checkTypeParameter /app/node_modules/typescript/lib/tsc.js:37741:36
+      1    0.0%    0.0%  LazyCompile: ~checkTypeLiteral /app/node_modules/typescript/lib/tsc.js:38254:34
+      1    0.0%    0.0%  LazyCompile: ~checkTypeForDuplicateIndexSignatures /app/node_modules/typescript/lib/tsc.js:38038:54
+      1    0.0%    0.0%  LazyCompile: ~checkStrictModeFunctionName /app/node_modules/typescript/lib/tsc.js:18852:45
+      1    0.0%    0.0%  LazyCompile: ~checkPropertyAccessExpressionOrQualifiedName /app/node_modules/typescript/lib/tsc.js:34936:62
+      1    0.0%    0.0%  LazyCompile: ~checkNoTypeArguments /app/node_modules/typescript/lib/tsc.js:27735:38
+      1    0.0%    0.0%  LazyCompile: ~checkMethodDeclaration /app/node_modules/typescript/lib/tsc.js:38080:40
+      1    0.0%    0.0%  LazyCompile: ~checkInterfaceDeclaration /app/node_modules/typescript/lib/tsc.js:40433:43
+      1    0.0%    0.0%  LazyCompile: ~checkIndexConstraints /app/node_modules/typescript/lib/tsc.js:40013:39
+      1    0.0%    0.0%  LazyCompile: ~checkGrammarMethod /app/node_modules/typescript/lib/tsc.js:43215:36
+      1    0.0%    0.0%  LazyCompile: ~checkGrammarFunctionLikeDeclaration /app/node_modules/typescript/lib/tsc.js:42825:53
+      1    0.0%    0.0%  LazyCompile: ~checkGrammarForDisallowedTrailingComma /app/node_modules/typescript/lib/tsc.js:42779:56
+      1    0.0%    0.0%  LazyCompile: ~checkGrammarExpressionWithTypeArguments /app/node_modules/typescript/lib/tsc.js:42921:57
+      1    0.0%    0.0%  LazyCompile: ~checkGrammarDecoratorsAndModifiers /app/node_modules/typescript/lib/tsc.js:42499:52
+      1    0.0%    0.0%  LazyCompile: ~checkGrammarComputedPropertyName /app/node_modules/typescript/lib/tsc.js:42973:50
+      1    0.0%    0.0%  LazyCompile: ~checkExpressionWorker /app/node_modules/typescript/lib/tsc.js:37650:39
+      1    0.0%    0.0%  LazyCompile: ~checkExportsOnMergedDeclarations /app/node_modules/typescript/lib/tsc.js:38512:50
+      1    0.0%    0.0%  LazyCompile: ~checkDecorators /app/node_modules/typescript/lib/tsc.js:38837:33
+      1    0.0%    0.0%  LazyCompile: ~checkCollisionWithGlobalPromiseInGeneratedCode /app/node_modules/typescript/lib/tsc.js:39322:64
+      1    0.0%    0.0%  LazyCompile: ~checkCollisionWithArgumentsInGeneratedCode /app/node_modules/typescript/lib/tsc.js:39248:60
+      1    0.0%    0.0%  LazyCompile: ~checkBlock /app/node_modules/typescript/lib/tsc.js:39232:28
+      1    0.0%    0.0%  LazyCompile: ~checkArrayType /app/node_modules/typescript/lib/tsc.js:38263:32
+      1    0.0%    0.0%  LazyCompile: ~check /app/node_modules/typescript/lib/tsc.js:25530:27
+      1    0.0%    0.0%  LazyCompile: ~bindJSDoc /app/node_modules/typescript/lib/tsc.js:18937:27
+      1    0.0%    0.0%  LazyCompile: ~bindEach /app/node_modules/typescript/lib/tsc.js:17835:26
+      1    0.0%    0.0%  LazyCompile: ~binarySearch /app/node_modules/typescript/lib/tsc.js:1096:26
+      1    0.0%    0.0%  LazyCompile: ~appendIfUnique /app/node_modules/typescript/lib/tsc.js:987:28
+      1    0.0%    0.0%  LazyCompile: ~addListener events.js:296:58
+      1    0.0%    0.0%  LazyCompile: ~addJSDocComment /app/node_modules/typescript/lib/tsc.js:12428:33
+      1    0.0%    0.0%  LazyCompile: ~addInheritedMembers /app/node_modules/typescript/lib/tsc.js:26051:37
+      1    0.0%    0.0%  LazyCompile: ~UseSparseVariant native array.js:61:26
+      1    0.0%    0.0%  LazyCompile: ~Stats.isFile fs.js:219:34
+      1    0.0%    0.0%  LazyCompile: ~Stats._checkModeProperty fs.js:211:46
+      1    0.0%    0.0%  LazyCompile: ~StackPop native array.js:82:18
+      1    0.0%    0.0%  LazyCompile: ~StackHas native array.js:85:18
+      1    0.0%    0.0%  LazyCompile: ~QuickSort native array.js:573:19
+      1    0.0%    0.0%  LazyCompile: ~InnerArrayJoin native array.js:274:24
+      1    0.0%    0.0%  LazyCompile: ~FSWatcher._handle.onchange fs.js:1355:35
+      1    0.0%    0.0%  LazyCompile: ~FSWatcher fs.js:1348:19
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> /app/node_modules/typescript/lib/tsc.js:7082:50
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> /app/node_modules/typescript/lib/tsc.js:24007:67
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> /app/node_modules/typescript/lib/tsc.js:16302:67
+      1    0.0%    0.0%  LazyCompile: ~<anonymous> /app/node_modules/typescript/lib/tsc.js:1453:50
+      1    0.0%    0.0%  LazyCompile: *symbolIsValue /app/node_modules/typescript/lib/tsc.js:23365:31
+      1    0.0%    0.0%  LazyCompile: *structuredTypeRelatedTo /app/node_modules/typescript/lib/tsc.js:30178:45
+      1    0.0%    0.0%  LazyCompile: *statsFromValues fs.js:245:25
+      1    0.0%    0.0%  LazyCompile: *skipWhitespace /app/node_modules/typescript/lib/tsc.js:16407:40
+      1    0.0%    0.0%  LazyCompile: *signaturesRelatedTo /app/node_modules/typescript/lib/tsc.js:30500:41
+      1    0.0%    0.0%  LazyCompile: *resolveStructuredTypeMembers /app/node_modules/typescript/lib/tsc.js:26618:46
+      1    0.0%    0.0%  LazyCompile: *resolveEntityName /app/node_modules/typescript/lib/tsc.js:22973:35
+      1    0.0%    0.0%  LazyCompile: *resolveAnonymousTypeMembers /app/node_modules/typescript/lib/tsc.js:26434:45
+      1    0.0%    0.0%  LazyCompile: *removeRedundantLiteralTypes /app/node_modules/typescript/lib/tsc.js:28090:45
+      1    0.0%    0.0%  LazyCompile: *recursiveTypeRelatedTo /app/node_modules/typescript/lib/tsc.js:30117:44
+      1    0.0%    0.0%  LazyCompile: *pushTypeResolution /app/node_modules/typescript/lib/tsc.js:24773:36
+      1    0.0%    0.0%  LazyCompile: *propertiesIdenticalTo /app/node_modules/typescript/lib/tsc.js:30476:43
+      1    0.0%    0.0%  LazyCompile: *parseTypeOperatorOrHigher /app/node_modules/typescript/lib/tsc.js:13954:43
+      1    0.0%    0.0%  LazyCompile: *parseSemicolon /app/node_modules/typescript/lib/tsc.js:12674:32
+      1    0.0%    0.0%  LazyCompile: *parseOptional /app/node_modules/typescript/lib/tsc.js:12646:31
+      1    0.0%    0.0%  LazyCompile: *parseNonArrayType /app/node_modules/typescript/lib/tsc.js:13799:35
+      1    0.0%    0.0%  LazyCompile: *parseModifiers /app/node_modules/typescript/lib/tsc.js:15836:32
+      1    0.0%    0.0%  LazyCompile: *parseKeywordAndNoDot /app/node_modules/typescript/lib/tsc.js:13753:38
+      1    0.0%    0.0%  LazyCompile: *parseJSDocCommentWorker /app/node_modules/typescript/lib/tsc.js:16286:45
+      1    0.0%    0.0%  LazyCompile: *parseDecorators /app/node_modules/typescript/lib/tsc.js:15821:33
+      1    0.0%    0.0%  LazyCompile: *nodeIsMissing /app/node_modules/typescript/lib/tsc.js:6617:27
+      1    0.0%    0.0%  LazyCompile: *map /app/node_modules/typescript/lib/tsc.js:527:17
+      1    0.0%    0.0%  LazyCompile: *isThisless /app/node_modules/typescript/lib/tsc.js:26026:28
+      1    0.0%    0.0%  LazyCompile: *isSimpleTypeRelatedTo /app/node_modules/typescript/lib/tsc.js:29625:39
+      1    0.0%    0.0%  LazyCompile: *isReadonlySymbol /app/node_modules/typescript/lib/tsc.js:36839:34
+      1    0.0%    0.0%  LazyCompile: *isListElement /app/node_modules/typescript/lib/tsc.js:12834:31
+      1    0.0%    0.0%  LazyCompile: *isInJavaScriptFile /app/node_modules/typescript/lib/tsc.js:7702:32
+      1    0.0%    0.0%  LazyCompile: *isDoubleQuotedString /app/node_modules/typescript/lib/tsc.js:68048:38
+      1    0.0%    0.0%  LazyCompile: *hasLateBindableName /app/node_modules/typescript/lib/tsc.js:26081:37
+      1    0.0%    0.0%  LazyCompile: *hasDynamicName /app/node_modules/typescript/lib/tsc.js:8394:28
+      1    0.0%    0.0%  LazyCompile: *getTypeWithThisArgument /app/node_modules/typescript/lib/tsc.js:26194:41
+      1    0.0%    0.0%  LazyCompile: *getTypeReferenceTypeWorker /app/node_modules/typescript/lib/tsc.js:27685:44
+      1    0.0%    0.0%  LazyCompile: *getTypeFromUnionTypeNode /app/node_modules/typescript/lib/tsc.js:28185:42
+      1    0.0%    0.0%  LazyCompile: *getTypeFromTypeLiteralOrFunctionOrConstructorTypeNode /app/node_modules/typescript/lib/tsc.js:28755:71
+      1    0.0%    0.0%  LazyCompile: *getSourceFileOfNode /app/node_modules/typescript/lib/tsc.js:6563:33
+      1    0.0%    0.0%  LazyCompile: *getEscapedTextOfIdentifierOrLiteral /app/node_modules/typescript/lib/tsc.js:8444:49
+      1    0.0%    0.0%  LazyCompile: *getDeclarationOfKind /app/node_modules/typescript/lib/tsc.js:6432:34
+      1    0.0%    0.0%  LazyCompile: *getConstraintFromTypeParameter /app/node_modules/typescript/lib/tsc.js:27506:48
+      1    0.0%    0.0%  LazyCompile: *getConstrainedTypeVariable /app/node_modules/typescript/lib/tsc.js:27718:44
+      1    0.0%    0.0%  LazyCompile: *getCombinedModifierFlags /app/node_modules/typescript/lib/tsc.js:10004:38
+      1    0.0%    0.0%  LazyCompile: *getCachedFileSystemEntries /app/node_modules/typescript/lib/tsc.js:62636:44
+      1    0.0%    0.0%  LazyCompile: *getAnonymousTypeInstantiation /app/node_modules/typescript/lib/tsc.js:29162:47
+      1    0.0%    0.0%  LazyCompile: *finishNode /app/node_modules/typescript/lib/tsc.js:12706:28
+      1    0.0%    0.0%  LazyCompile: *findResolutionCycleStartIndex /app/node_modules/typescript/lib/tsc.js:24787:47
+      1    0.0%    0.0%  LazyCompile: *findAncestor /app/node_modules/typescript/lib/tsc.js:345:26
+      1    0.0%    0.0%  LazyCompile: *fillSignature /app/node_modules/typescript/lib/tsc.js:13513:31
+      1    0.0%    0.0%  LazyCompile: *createObjectType /app/node_modules/typescript/lib/tsc.js:23394:34
+      1    0.0%    0.0%  LazyCompile: *createNodeArray /app/node_modules/typescript/lib/tsc.js:12699:33
+      1    0.0%    0.0%  LazyCompile: *combinePaths /app/node_modules/typescript/lib/tsc.js:2001:26
+      1    0.0%    0.0%  LazyCompile: *checkTypeParameters /app/node_modules/typescript/lib/tsc.js:40090:37
+      1    0.0%    0.0%  LazyCompile: *checkParameter /app/node_modules/typescript/lib/tsc.js:37763:32
+      1    0.0%    0.0%  LazyCompile: *checkInterfaceDeclaration /app/node_modules/typescript/lib/tsc.js:40433:43
+      1    0.0%    0.0%  LazyCompile: *bindPropertyWorker /app/node_modules/typescript/lib/tsc.js:19146:36
+      1    0.0%    0.0%  LazyCompile: *bindContainer /app/node_modules/typescript/lib/tsc.js:17738:31
+      1    0.0%    0.0%  LazyCompile: *addDeclarationToSymbol /app/node_modules/typescript/lib/tsc.js:17575:40
+      1    0.0%    0.0%  LazyCompile: *QuickSort native array.js:573:19
+      1    0.0%    0.0%  LazyCompile: *DoJoin native array.js:94:16
+      1    0.0%    0.0%  Handler: An IC handler from the snapshot {2}
+      1    0.0%    0.0%  Handler: An IC handler from the snapshot {1}
+      1    0.0%    0.0%  Builtin: LoadIC_Uninitialized
+      1    0.0%    0.0%  Builtin: InterpreterPushUndefinedAndArgsThenCall
+      1    0.0%    0.0%  Builtin: GreaterThan
+      1    0.0%    0.0%  Builtin: FunctionPrototypeHasInstance
+      1    0.0%    0.0%  Builtin: FastNewFunctionContextFunction
+      1    0.0%    0.0%  Builtin: FastArrayShift
+      1    0.0%    0.0%  Builtin: Construct {1}
+      1    0.0%    0.0%  Builtin: ArrayMap
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+   2104    6.4%   92.1%  JavaScript
+      0    0.0%    0.0%  C++
+    242    0.7%   10.6%  GC
+  30581   93.0%          Shared libraries
+    181    0.6%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  22067   67.1%  /lib/ld-musl-x86_64.so.1
+  15181   68.8%    LazyCompile: *getAccessibleFileSystemEntries /app/node_modules/typescript/lib/tsc.js:3502:52
+  15161   99.9%      LazyCompile: ~getAccessibleSortedChildDirectories /app/node_modules/typescript/lib/tsc.js:3303:67
+  15161  100.0%        LazyCompile: ~watchChildDirectories /app/node_modules/typescript/lib/tsc.js:3120:39
+  15161  100.0%          LazyCompile: ~updateChildWatches /app/node_modules/typescript/lib/tsc.js:3115:36
+  15152   99.9%            LazyCompile: ~createDirectoryWatcher /app/node_modules/typescript/lib/tsc.js:3098:40
+   3052   13.8%    LazyCompile: *realpathSync fs.js:1579:40
+   3052  100.0%      LazyCompile: ~realpath /app/node_modules/typescript/lib/tsc.js:3557:30
+   2932   96.1%        LazyCompile: ~<anonymous> /app/node_modules/typescript/lib/tsc.js:3122:153
+   2932  100.0%          LazyCompile: ~mapDefined /app/node_modules/typescript/lib/tsc.js:664:24
+   2932  100.0%            LazyCompile: ~watchChildDirectories /app/node_modules/typescript/lib/tsc.js:3120:39
+    120    3.9%        LazyCompile: ~realpath /app/node_modules/typescript/lib/tsc.js:66438:52
+    120  100.0%          LazyCompile: ~compilerHost.realpath /app/node_modules/typescript/lib/tsc.js:66579:50
+    120  100.0%            LazyCompile: ~realPath /app/node_modules/typescript/lib/tsc.js:20955:22
+   1545    7.0%    LazyCompile: *fs.statSync fs.js:945:23
+   1545  100.0%      LazyCompile: ~fileSystemEntryExists /app/node_modules/typescript/lib/tsc.js:3536:43
+    617   39.9%        LazyCompile: ~fsWatch /app/node_modules/typescript/lib/tsc.js:3402:29
+    617  100.0%          LazyCompile: ~fsWatchDirectory /app/node_modules/typescript/lib/tsc.js:3455:38
+    617  100.0%            LazyCompile: ~watchDirectoryUsingFsWatch /app/node_modules/typescript/lib/tsc.js:3458:48
+    595   38.5%        LazyCompile: ~directoryExists /app/node_modules/typescript/lib/tsc.js:3551:37
+    405   68.1%          LazyCompile: ~watchChildDirectories /app/node_modules/typescript/lib/tsc.js:3120:39
+    405  100.0%            LazyCompile: ~updateChildWatches /app/node_modules/typescript/lib/tsc.js:3115:36
+    189   31.8%          LazyCompile: ~directoryExists /app/node_modules/typescript/lib/tsc.js:66435:39
+    187   98.9%            LazyCompile: ~directoryExists /app/node_modules/typescript/lib/tsc.js:62697:33
+      2    1.1%            LazyCompile: ~ensureDirectoriesExist /app/node_modules/typescript/lib/tsc.js:66897:40
+    313   20.3%        LazyCompile: ~fileExists /app/node_modules/typescript/lib/tsc.js:3548:32
+    216   69.0%          LazyCompile: ~fileExists /app/node_modules/typescript/lib/tsc.js:66433:34
+    216  100.0%            LazyCompile: ~fileExists /app/node_modules/typescript/lib/tsc.js:62691:28
+     97   31.0%          LazyCompile: ~readFile /app/node_modules/typescript/lib/tsc.js:3464:30
+     97  100.0%            LazyCompile: ~readFile /app/node_modules/typescript/lib/tsc.js:66434:32
+     20    1.3%        LazyCompile: ~<anonymous> /app/node_modules/typescript/lib/tsc.js:3555:66
+     20  100.0%          LazyCompile: ~filter /app/node_modules/typescript/lib/tsc.js:490:20
+     20  100.0%            LazyCompile: ~getDirectories /app/node_modules/typescript/lib/tsc.js:3554:36
+    413    1.9%    /usr/local/bin/node
+     37    9.0%      Builtin: StringPrototypeReplace
+     27   73.0%        LazyCompile: *getAccessibleFileSystemEntries /app/node_modules/typescript/lib/tsc.js:3502:52
+     27  100.0%          LazyCompile: ~getAccessibleSortedChildDirectories /app/node_modules/typescript/lib/tsc.js:3303:67
+     27  100.0%            LazyCompile: ~watchChildDirectories /app/node_modules/typescript/lib/tsc.js:3120:39
+      5   13.5%        LazyCompile: *combinePaths /app/node_modules/typescript/lib/tsc.js:2001:26
+      2   40.0%          LazyCompile: ~getPathComponents /app/node_modules/typescript/lib/tsc.js:1894:31
+      2  100.0%            LazyCompile: ~getNormalizedPathComponents /app/node_modules/typescript/lib/tsc.js:1926:41
+      2   40.0%          LazyCompile: ~getAccessibleFileSystemEntries /app/node_modules/typescript/lib/tsc.js:3502:52
+      2  100.0%            LazyCompile: ~getAccessibleSortedChildDirectories /app/node_modules/typescript/lib/tsc.js:3303:67
+      1   20.0%          LazyCompile: ~resolveTripleslashReference /app/node_modules/typescript/lib/tsc.js:62904:41
+      1  100.0%            LazyCompile: ~<anonymous> /app/node_modules/typescript/lib/tsc.js:64382:55
+      2    5.4%        LazyCompile: ~normalizeSlashes /app/node_modules/typescript/lib/tsc.js:1771:30
+      2  100.0%          LazyCompile: ~combinePaths /app/node_modules/typescript/lib/tsc.js:2001:26
+      2  100.0%            LazyCompile: ~getPathComponents /app/node_modules/typescript/lib/tsc.js:1894:31
+      2    5.4%        LazyCompile: *normalizeSlashes /app/node_modules/typescript/lib/tsc.js:1771:30
+      2  100.0%          LazyCompile: ~combinePaths /app/node_modules/typescript/lib/tsc.js:2001:26
+      1   50.0%            LazyCompile: ~loadNodeModuleFromDirectoryWorker /app/node_modules/typescript/lib/tsc.js:21101:47
+      1   50.0%            LazyCompile: ~getPathComponents /app/node_modules/typescript/lib/tsc.js:1894:31
+      1    2.7%        LazyCompile: *resolvePath /app/node_modules/typescript/lib/tsc.js:2023:25
+      1  100.0%          LazyCompile: ~normalizePath /app/node_modules/typescript/lib/tsc.js:1839:27
+      1  100.0%            LazyCompile: ~toPath /app/node_modules/typescript/lib/tsc.js:296:20
+     11    2.7%      LazyCompile: *getAccessibleFileSystemEntries /app/node_modules/typescript/lib/tsc.js:3502:52
+     11  100.0%        LazyCompile: ~getAccessibleSortedChildDirectories /app/node_modules/typescript/lib/tsc.js:3303:67
+     11  100.0%          LazyCompile: ~watchChildDirectories /app/node_modules/typescript/lib/tsc.js:3120:39
+     11  100.0%            LazyCompile: ~updateChildWatches /app/node_modules/typescript/lib/tsc.js:3115:36
+      9    2.2%      LazyCompile: ~mark /app/node_modules/typescript/lib/tsc.js:130:22
+      3   33.3%        LazyCompile: ~bindSourceFile /app/node_modules/typescript/lib/tsc.js:17487:28
+      3  100.0%          LazyCompile: ~initializeTypeChecker /app/node_modules/typescript/lib/tsc.js:42382:39
+      3  100.0%            LazyCompile: ~createTypeChecker /app/node_modules/typescript/lib/tsc.js:21401:31
+      2   22.2%        LazyCompile: ~emitWorker /app/node_modules/typescript/lib/tsc.js:63781:28
+      2  100.0%          LazyCompile: ~<anonymous> /app/node_modules/typescript/lib/tsc.js:63776:54
+      2  100.0%            LazyCompile: ~runWithCancellationToken /app/node_modules/typescript/lib/tsc.js:63851:42
+      2   22.2%        LazyCompile: ~checkSourceFile /app/node_modules/typescript/lib/tsc.js:41315:33
+      2  100.0%          LazyCompile: ~getDiagnosticsWorker /app/node_modules/typescript/lib/tsc.js:41380:38
+      2  100.0%            LazyCompile: ~getDiagnostics /app/node_modules/typescript/lib/tsc.js:41371:32
+      1   11.1%        LazyCompile: ~getNewSourceFile /app/node_modules/typescript/lib/tsc.js:66732:38
+      1  100.0%          LazyCompile: ~getVersionedSourceFileByPath /app/node_modules/typescript/lib/tsc.js:66694:46
+      1  100.0%            LazyCompile: ~getSourceFile /app/node_modules/typescript/lib/tsc.js:66565:37
+      1   11.1%        LazyCompile: ~createSourceFile /app/node_modules/typescript/lib/tsc.js:12219:30
+      1  100.0%          LazyCompile: ~getNewSourceFile /app/node_modules/typescript/lib/tsc.js:66732:38
+      1  100.0%            LazyCompile: ~getVersionedSourceFileByPath /app/node_modules/typescript/lib/tsc.js:66694:46
+      6    1.5%      LazyCompile: ~bindChildrenWorker /app/node_modules/typescript/lib/tsc.js:17859:36
+      5   83.3%        LazyCompile: *bind /app/node_modules/typescript/lib/tsc.js:18912:22
+      3   60.0%          LazyCompile: *visitNodes /app/node_modules/typescript/lib/tsc.js:11760:24
+      3  100.0%            LazyCompile: ~forEachChild /app/node_modules/typescript/lib/tsc.js:11780:26
+      1   20.0%          LazyCompile: ~forEach /app/node_modules/typescript/lib/tsc.js:307:21
+      1  100.0%            LazyCompile: ~bindEach /app/node_modules/typescript/lib/tsc.js:17835:26
+      1   20.0%          LazyCompile: *forEach /app/node_modules/typescript/lib/tsc.js:307:21
+      1  100.0%            LazyCompile: ~bindEach /app/node_modules/typescript/lib/tsc.js:17835:26
+      1   16.7%        LazyCompile: ~bindChildren /app/node_modules/typescript/lib/tsc.js:17814:30
+      1  100.0%          LazyCompile: ~bind /app/node_modules/typescript/lib/tsc.js:18912:22
+      1  100.0%            LazyCompile: *visitNode /app/node_modules/typescript/lib/tsc.js:11757:23
+      5    1.2%      LazyCompile: *realpathSync fs.js:1579:40
+      5  100.0%        LazyCompile: ~realpath /app/node_modules/typescript/lib/tsc.js:3557:30
+      3   60.0%          LazyCompile: ~<anonymous> /app/node_modules/typescript/lib/tsc.js:3122:153
+      3  100.0%            LazyCompile: ~mapDefined /app/node_modules/typescript/lib/tsc.js:664:24
+      2   40.0%          LazyCompile: ~realpath /app/node_modules/typescript/lib/tsc.js:66438:52
+      2  100.0%            LazyCompile: ~compilerHost.realpath /app/node_modules/typescript/lib/tsc.js:66579:50
+
+   8242   25.1%  /usr/local/bin/node
+   7999   97.1%    /usr/local/bin/node
+   3282   41.0%      LazyCompile: ~fs.statSync fs.js:945:23
+   2413   73.5%        LazyCompile: ~getAccessibleFileSystemEntries /app/node_modules/typescript/lib/tsc.js:3502:52
+   2408   99.8%          LazyCompile: ~getAccessibleSortedChildDirectories /app/node_modules/typescript/lib/tsc.js:3303:67
+   2408  100.0%            LazyCompile: ~watchChildDirectories /app/node_modules/typescript/lib/tsc.js:3120:39
+    869   26.5%        LazyCompile: ~fileSystemEntryExists /app/node_modules/typescript/lib/tsc.js:3536:43
+    535   61.6%          LazyCompile: ~fsWatch /app/node_modules/typescript/lib/tsc.js:3402:29
+    535  100.0%            LazyCompile: ~fsWatchDirectory /app/node_modules/typescript/lib/tsc.js:3455:38
+    330   38.0%          LazyCompile: ~directoryExists /app/node_modules/typescript/lib/tsc.js:3551:37
+    326   98.8%            LazyCompile: ~watchChildDirectories /app/node_modules/typescript/lib/tsc.js:3120:39
+      4    1.2%            LazyCompile: ~directoryExists /app/node_modules/typescript/lib/tsc.js:66435:39
+   2728   34.1%      LazyCompile: ~fs.readdirSync fs.js:900:26
+   2544   93.3%        LazyCompile: *getAccessibleFileSystemEntries /app/node_modules/typescript/lib/tsc.js:3502:52
+   2541   99.9%          LazyCompile: ~getAccessibleSortedChildDirectories /app/node_modules/typescript/lib/tsc.js:3303:67
+   2541  100.0%            LazyCompile: ~watchChildDirectories /app/node_modules/typescript/lib/tsc.js:3120:39
+    182    6.7%        LazyCompile: ~getAccessibleFileSystemEntries /app/node_modules/typescript/lib/tsc.js:3502:52
+    180   98.9%          LazyCompile: ~getAccessibleSortedChildDirectories /app/node_modules/typescript/lib/tsc.js:3303:67
+    180  100.0%            LazyCompile: ~watchChildDirectories /app/node_modules/typescript/lib/tsc.js:3120:39
+      2    1.1%          LazyCompile: ~visitDirectory /app/node_modules/typescript/lib/tsc.js:2313:32
+      1   50.0%            LazyCompile: ~visitDirectory /app/node_modules/typescript/lib/tsc.js:2313:32
+      1   50.0%            LazyCompile: ~matchFiles /app/node_modules/typescript/lib/tsc.js:2300:24
+    791    9.9%      LazyCompile: ~realpathSync fs.js:1579:40
+    787   99.5%        LazyCompile: ~realpath /app/node_modules/typescript/lib/tsc.js:3557:30
+    787  100.0%          LazyCompile: ~<anonymous> /app/node_modules/typescript/lib/tsc.js:3122:153
+    787  100.0%            LazyCompile: ~mapDefined /app/node_modules/typescript/lib/tsc.js:664:24
+     90    1.1%      LazyCompile: ~createScript vm.js:79:22
+     90  100.0%        LazyCompile: ~runInThisContext vm.js:138:26
+     90  100.0%          LazyCompile: ~Module._compile module.js:609:37
+     90  100.0%            LazyCompile: ~Module._extensions..js module.js:661:37
+

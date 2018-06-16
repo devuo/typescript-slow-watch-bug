@@ -2,13 +2,12 @@ version: '2.1'
 services:
   typescript-watch:
     build: .
-    command: node_modules/.bin/tsc --watch
+    command: ./docker-command.sh
     ports:
       - "4488:4488"
       - "5082:5082"
     environment:
       - NODE_ENV=development
-      - TSC_NONPOLLING_WATCHER=1
     network_mode: bridge
     volumes:
       - .:/app/

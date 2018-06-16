@@ -4,4 +4,4 @@ EXPOSE 4488 5082
 
 WORKDIR /app
 
-CMD ["node", "dist/src/index.js"]
+CMD ["node", "dist/index.js"]
