@@ -11,5 +11,3 @@ services:
     network_mode: bridge
     volumes:
       - .:/app/
-    volumes_from:
-      - container:configs-volume:ro
