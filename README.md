@@ -87,28 +87,31 @@ Emit time:            0.05s
 Total time:          32.47s <<<<<<<<< see
 ```
 
-For comparision, non watch builds are still fast under 2.9
+## TypeScript 3.0.0-dev.20180616
+
+_See `typescript-300dev-prof-process.txt` for profiling details_
 
 ```
-node_modules/.bin/tsc --extendedDiagnostics
+21:15:10 - Starting compilation in watch mode...
 
-Files:                   61
-Lines:                63371
-Nodes:               279942
-Identifiers:          99371
-Symbols:              79759
-Types:                30108
-Memory used:        126833K
-I/O Read time:        0.15s
-Parse time:           0.72s
-Program time:         1.84s
-Bind time:            0.47s
-Check time:           1.82s
-transformTime time:   0.02s
+21:15:42 - Found 0 errors. Watching for file changes.
+Files:                   67
+Lines:                64772
+Nodes:               284175
+Identifiers:         100872
+Symbols:              81598
+Types:                30924
+Memory used:        147366K
+I/O Read time:        0.19s
+Parse time:           0.74s
+Program time:        29.77s
+Bind time:            0.48s
+Check time:           1.77s
+transformTime time:   0.03s
 commentTime time:     0.00s
 Source Map time:      0.00s
 I/O Write time:       0.01s
-printTime time:       0.04s
-Emit time:            0.04s
-Total time:           4.17s
+printTime time:       0.07s
+Emit time:            0.07s
+Total time:          32.09s
 ```
